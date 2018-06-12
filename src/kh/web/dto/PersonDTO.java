@@ -1,7 +1,7 @@
 package kh.web.dto;
 
 public class PersonDTO {
-	private int seq;
+	private String seq;
 	private String name;
 	private String phone;
 	private String email;
@@ -10,7 +10,7 @@ public class PersonDTO {
 		
 	}
 	
-	public PersonDTO(int seq, String name, String phone, String email) {
+	public PersonDTO(String seq, String name, String phone, String email) {
 		super();
 		this.seq = seq;
 		this.name = name;
@@ -18,11 +18,11 @@ public class PersonDTO {
 		this.email = email;
 	}
 
-	public int getSeq() {
+	public String getSeq() {
 		return seq;
 	}
 
-	public void setSeq(int seq) {
+	public void setSeq(String seq) {
 		this.seq = seq;
 	}
 

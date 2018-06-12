@@ -35,7 +35,7 @@ public class PersonDAO {
 		while(result.next()) {
 			PersonDTO dto = new PersonDTO();
 			
-			dto.setSeq(result.getInt(1));
+			dto.setSeq(result.getString(1));
 			dto.setName(result.getString(2));
 			dto.setPhone(result.getString(3));
 			dto.setEmail(result.getString(4));
