@@ -25,7 +25,7 @@
 		})
 	
 		$("#output").click(function() {
-			$(location).attr("href", "output.jsp")
+			$(location).attr("href", "output.do")
 		})
 		
 	}) 
