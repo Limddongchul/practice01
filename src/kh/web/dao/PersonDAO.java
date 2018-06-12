@@ -48,4 +48,24 @@ public class PersonDAO {
 		
 		return list;
 	}
+	
+	public int insertData(String name, String phone, String email) throws Exception{
+		Connection con = this.createConnection();
+		String sql = "insert into person values(person_seq.nextval,?,?,?)";
+		
+		PreparedStatement pstat = con.prepareStatement(sql);
+		
+		pstat.setString(1, name);
+		pstat.setString(2, phone);
+		pstat.setString(3, email);
+		
+		int result = pstat.executeUpdate();
+		
+		con.commit();
+		pstat.close();
+		con.commit();
+		
+		return result;
+		
+	}
 }
