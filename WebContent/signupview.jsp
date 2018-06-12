@@ -16,7 +16,7 @@
 	
 		if(${result} > 0 ) {
 		 	alert("입력이 완료되었습니다");
-			location.href="input.jsp"; 	
+			$(location).attr("href", "input.jsp");		 	
 		}else {
 			alert("입력실패 관리자에게 문의하세요");
 		}
